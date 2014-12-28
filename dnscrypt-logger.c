@@ -48,6 +48,9 @@ dcplugin_init(DCPlugin * const dcplugin, int argc, char *argv[])
 			return -1;
 		}
 	}
+
+	fputs("Name,Type,Date\n", fp);
+
 	dcplugin_set_user_data(dcplugin, fp);
 
 	return 0;
